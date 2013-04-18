@@ -89,7 +89,7 @@ all based on OpenSSL, which has its own cast of dozens!
 Installation
 ------------
 
-To install it, run:
+To install it, run::
 
   pip install ssl
 
