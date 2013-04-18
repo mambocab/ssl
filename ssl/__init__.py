@@ -80,6 +80,10 @@ from socket import getnameinfo as _getnameinfo
 import base64        # for DER-to-PEM translation
 import select        # for handshake
 
+# The version as used in the setup.py
+__version__ = "1.16"
+
+
 class SSLSocket (socket):
 
     """This class implements a subtype of socket.socket that wraps
