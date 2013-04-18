@@ -16,4 +16,4 @@ clean:
 .PHONY: test
 
 test:
-	python setup.py test
+	python test/test_ssl.py
