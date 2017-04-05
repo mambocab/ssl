@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import codecs
 import os
 import re
@@ -30,14 +32,14 @@ def find_file(filename, std_dirs, paths):
     # Check the standard locations
     for dir in std_dirs:
         f = os.path.join(dir, filename)
-        print 'looking for', f
+        print('looking for', f)
         if os.path.exists(f):
             return []
 
     # Check the additional directories
     for dir in paths:
         f = os.path.join(dir, filename)
-        print 'looking for', f
+        print('looking for', f)
         if os.path.exists(f):
             return [dir]
 
